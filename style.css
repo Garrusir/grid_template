@@ -19,14 +19,27 @@ h1 {
 header {
 	min-height: 600px;
 	height: 100vh;
-	background-image: url('img/slide-1.png');
+	background-color: #ccc;
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-top: 30px;
 	position: relative;
 	background-position-x: 50%;
 }
+.slide-1 {
+	background-image: url('img/slide-1.png');
+}
 
+.slide-2 {
+	background-image: url('img/slide-2.png');
+}
+
+.slide-3 {
+	background-image: url('img/slide-3.jpg');
+}
+.showing {
+	animation: .5s slide linear;
+}
 .header {
 	display: grid;
 	grid-template-rows: 60px;
@@ -682,3 +695,13 @@ footer ul a:hover {
 		margin: 0;
 	}
 }
+
+@keyframes slide {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: .5;
+	}
+
+} 

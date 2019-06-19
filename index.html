@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Arkana</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -9,16 +9,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<header class="slide-1">
+	<header class="slide-1" role='banner'>
 		<div class="wrapper">
-			<div class="header">
+			<div class="header" role='navigation'>
 				<div id='nav-btn' class="icon-item"><i class="fas fa-bars"></i></div>
-				<div class="icon-item"><i class="fas fa-search"></i></div>
+				<div class="icon-item" role='search'><i class="fas fa-search"></i></div>
 				<div class="logo">Arkana</div>
 				<div class="icon-item"><i class="fas fa-share-alt"></i></div>
 				<div class="icon-item"><i class="fas fa-suitcase"></i></div>
 			</div>
-			<div class="mob-nav">
+			<div class="mob-nav" aria-haspopup='true'>
 				<ul>
 					<li><a href="#">Dresses</a></li>
 					<li><a href="#">Blouses</a></li>
@@ -28,21 +28,21 @@
 					<li><a href="#">Pans</a></li>
 				</ul>
 			</div>
-			<div class="nav">
+			<div class="nav" role='menubar'>
 				<ul>
-					<li><a href="#">Dresses</a></li>
-					<li><a href="#">Blouses</a></li>
-					<li><a href="#">Tees & Tops</a></li>
-					<li><a href="#">T-Shirts</a></li>
-					<li><a href="#">Outwear</a></li>
-					<li><a href="#">Pans</a></li>
+					<li role='menu-item' tabindex="0"><a href="#">Dresses</a></li>
+					<li role='menu-item' tabindex="1" ><a href="#">Blouses</a></li>
+					<li role='menu-item' tabindex="2"><a href="#">Tees & Tops</a></li>
+					<li role='menu-item' tabindex="3"><a href="#">T-Shirts</a></li>
+					<li role='menu-item' tabindex="4"><a href="#">Outwear</a></li>
+					<li role='menu-item' tabindex="5"><a href="#">Pans</a></li>
 				</ul>
 			</div>
 			<div class="slider">
 				<div class="slide">
 					<h1>Tees & Tops</h1>
 					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-					<a href="#" class="btn">discovery more</a>
+					<a href="#" class="btn" role='button' tabindex="6">discovery more</a>
 				</div>
 				<div class="slider-nav">
 					<div class="item active" id='1'></div>
@@ -56,7 +56,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="block-1">
+	<section class="block-1" tabindex="7">
 		<div class="wrapper">
 			<div class="items">
 				<div class="item">
@@ -77,7 +77,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="block-2">
+	<section class="block-2" tabindex="8">
 		<div class="items">
 			<div class="item img-1">
 				<a href="#" class="btn">Dresses</a>
@@ -93,19 +93,19 @@
 			</div>
 		</div>
 	</section>
-	<section class="block-3">
+	<section class="block-3" tabindex="9">
 		<h1>Top Trending</h1>
 		<div class="line"></div>
 		<p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<div class="btns">
-			<div class="btn active">New products</div>
-			<div class="btn">Prices drop</div>
-			<div class="btn">Best sales</div>
+			<div class="btn active" tabindex="10">New products</div>
+			<div class="btn" tabindex="11">Prices drop</div>
+			<div class="btn" tabindex="12">Best sales</div>
 		</div>
 	</section>
-	<section class="block-4">
+	<section class="block-4" tabindex="13">
 		<div class="items">
-			<div class="item">
+			<div class="item" tabindex="14">
 				<div class="row">
 					<!-- <div class="sale">-20%</div> -->
 					<div class="new">New</div>
@@ -114,7 +114,7 @@
 				<div class="title">Excepteur sint occaecat cupidatat</div>
 				<div class="price">$199.00</div>
 			</div>
-			<div class="item">
+			<div class="item" tabindex="15">
 				<!-- <div class="row">
 					<div class="sale">-20%</div>
 					<div class="new">New</div>
@@ -123,7 +123,7 @@
 				<div class="title">Excepteur sint occaecat cupidatat</div>
 				<div class="price">$199.00</div>
 			</div>
-			<div class="item">
+			<div class="item" tabindex="16">
 				<div class="row">
 				<!-- 	<div class="sale">-20%</div> -->
 					<div class="new">New</div>
@@ -132,7 +132,7 @@
 				<div class="title">Excepteur sint occaecat cupidatat</div>
 				<div class="price">$199.00</div>
 			</div>
-			<div class="item">
+			<div class="item" tabindex="17">
 				<!-- <div class="row">
 					<div class="sale">-20%</div>
 					<div class="new">New</div>
@@ -141,7 +141,7 @@
 				<div class="title">Excepteur sint occaecat cupidatat</div>
 				<div class="price">$199.00</div>
 			</div>
-			<div class="item">
+			<div class="item" tabindex="18">
 				<div class="row">
 					<div class="sale">-20%</div>
 					<!-- <div class="new">New</div> -->
@@ -150,7 +150,7 @@
 				<div class="title">Excepteur sint occaecat cupidatat</div>
 				<div class="price">$199.00</div>
 			</div>
-			<div class="item">
+			<div class="item" tabindex="19">
 				<!-- <div class="row">
 					<div class="sale">-20%</div>
 					<div class="new">New</div>
@@ -159,16 +159,16 @@
 				<div class="title">Excepteur sint occaecat cupidatat</div>
 				<div class="price">$199.00</div>
 			</div>
-			<div class="item">
+			<div class="item" tabindex="20">
 				<div class="row">
 					<div class="sale">-20%</div>
 					<!-- <div class="new">New</div> -->
 				</div>
-				<img src="img/item/Imag-7.png" alt="item">
+				<img src="img/item/Imag-7.png" alt="item" tabindex="21">
 				<div class="title">Excepteur sint occaecat cupidatat</div>
 				<div class="price">$199.00</div>
 			</div>
-			<div class="item">
+			<div class="item" tabindex="22">
 				<!-- <div class="row">
 					<div class="sale">-20%</div>
 					<div class="new">New</div>
@@ -177,7 +177,7 @@
 				<div class="title">Excepteur sint occaecat cupidatat</div>
 				<div class="price">$199.00</div>
 			</div>
-			<div class="item">
+			<div class="item" tabindex="23">
 				<!-- <div class="row">
 					<div class="sale">-20%</div>
 					<div class="new">New</div>
@@ -186,7 +186,7 @@
 				<div class="title">Excepteur sint occaecat cupidatat</div>
 				<div class="price">$199.00</div>
 			</div>
-			<div class="item">
+			<div class="item" tabindex="24">
 				<div class="row">
 					<div class="sale">-20%</div>
 <!-- 					<div class="new">New</div>
@@ -197,11 +197,11 @@
 			</div>
 			
 		</div>
-		<div class="more">
+		<div class="more" tabindex="25">
 			<a href="#" class="btn">All products</a>
 		</div>
 	</section>
-	<section class="block-5">
+	<section class="block-5" >
 		<div class="img">
 			<img src="img/bags.png">
 		</div>
@@ -211,40 +211,40 @@
 			<div class="text">
 				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 			</div>
-			<a href="#" class="btn">Discovery more</a>
+			<a href="#" class="btn" tabindex="26">Discovery more</a>
 		</div>
 	</section>
-	<section class="block-6">
+	<section class="block-6" tabindex="27">
 		<div class="partners">
 			<div class="item">
-				<img src="img/partners/Logo_1.png">
+				<img src="img/partners/Logo_1.png" alt="partner"> 
 			</div>
 			<div class="item">
-				<img src="img/partners/Logo_2.png">
+				<img src="img/partners/Logo_2.png" alt="partner">
 			</div>
 			<div class="item">
-				<img src="img/partners/Logo_3.png">
+				<img src="img/partners/Logo_3.png" alt="partner">
 			</div>
 			<div class="item">
-				<img src="img/partners/Logo_4.png">
+				<img src="img/partners/Logo_4.png" alt="partner">
 			</div>
 			<div class="item">
-				<img src="img/partners/Logo_5.png">
+				<img src="img/partners/Logo_5.png" alt="partner">
 			</div>
 			<div class="item">
-				<img src="img/partners/Logo_6.png">
+				<img src="img/partners/Logo_6.png" alt="partner">
 			</div>
 		</div>
 	</section>
-	<section class="block-7">
+	<section class="block-7" >
 		<div class="inst">
-			<h2>#instagram</h2>
+			<h2><a href="#" tabindex="28">#instagram</a></h2>
 		</div>
 	</section>
-	<section class="block-8">
-		<div class="map">
+	<section class="block-8" >
+		<div class="map" title="map">
 			<div class="wrapper">
-				<div class="info">
+				<div class="info" tabindex="29">
 					<p>Alterego, 1 Infinite Loop, Cupertino,
 CA 95014</p>
 					<p>8 - 800 - 2000 - 3000</p>
@@ -255,7 +255,7 @@ CA 95014</p>
 			<!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A021db3e49182145d5fb5d85bb523622951e8d20d7f4d929faf6256722e6714af&amp;width=100%25&amp;height=440&amp;lang=ru_RU&amp;scroll=true"></script> -->
 		</div>
 	</section>
-	<footer>
+	<footer >
 		<div class="wrapper">
 			<div class="footer">
 			<div class="column main-col">
@@ -265,52 +265,52 @@ CA 95014</p>
 				</p>
 				<div class="soc-icons">
 					<a href="#" class="icon">
-						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-facebook-f" tabindex="30"></i>
 					</a>
 					<a href="#" class="icon">
-						<i class="fab fa-instagram"></i>
+						<i class="fab fa-instagram" tabindex="31"></i>
 					</a>
 					<a href="#" class="icon">
-						<i class="fab fa-pinterest"></i>
+						<i class="fab fa-pinterest" tabindex="32"></i>
 					</a>
 					<a href="#" class="icon">
-						<i class="fab fa-twitter"></i>
+						<i class="fab fa-twitter" tabindex="33"></i>
 					</a>
 				</div>
 				<div class="email">
-					<input type="email" placeholder="Enter your e-mail" name="email">
-					<div class="submit">Subscribe</div>
+					<label><input title="email" type="email" placeholder="Enter your e-mail" name="email" tabindex="34"></label>
+					<div class="submit" tabindex="35">Subscribe</div>
 				</div>
 			</div>
 			<div class="column">
 				<h2>Products</h2>
 				<ul>
-					<li><a href="#">Prices drop</a></li>
-					<li><a href="#">New products</a></li>
-					<li><a href="#">Best sales</a></li>
+					<li><a href="#" tabindex="36">Prices drop</a></li>
+					<li><a href="#" tabindex="37">New products</a></li>
+					<li><a href="#" tabindex="38">Best sales</a></li>
 				</ul>
 			</div>
 			<div class="column">
 				<h2>Information</h2>
 				<ul>
-					<li><a href="#">Delivery</a></li>
-					<li><a href="#">Legal Notice</a></li>
-					<li><a href="#">Terms and conditions of use</a></li>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Secure payment</a></li>
-					<li><a href="#">Contact us</a></li>
-					<li><a href="#">Sitemap</a></li>
-					<li><a href="#">Stores</a></li>
+					<li><a href="#" tabindex="39">Delivery</a></li>
+					<li><a href="#" tabindex="40">Legal Notice</a></li>
+					<li><a href="#" tabindex="41">Terms and conditions of use</a></li>
+					<li><a href="#" tabindex="42">About us</a></li>
+					<li><a href="#" tabindex="43">Secure payment</a></li>
+					<li><a href="#" tabindex="44">Contact us</a></li>
+					<li><a href="#" tabindex="45">Sitemap</a></li>
+					<li><a href="#" tabindex="46">Stores</a></li>
 					
 				</ul>
 			</div>
 			<div class="column">
 				<h2>Your account</h2>
 				<ul>
-					<li><a href="#">Addresses</a></li>
-					<li><a href="#">Credit slips</a></li>
-					<li><a href="#">Orders</a></li>
-					<li><a href="#">Personal info</a></li>
+					<li><a href="#" tabindex="47">Addresses</a></li>
+					<li><a href="#" tabindex="48">Credit slips</a></li>
+					<li><a href="#" tabindex="49">Orders</a></li>
+					<li><a href="#" tabindex="50">Personal info</a></li>
 					
 				</ul>
 			</div>

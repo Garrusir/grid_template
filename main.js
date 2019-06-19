@@ -58,5 +58,5 @@ window.onload = () => {
 			currentSlide++;
 			slide(currentSlide);
 		}
-	}, 4000)
+	}, 10000)
 }
